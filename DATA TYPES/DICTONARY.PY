@@ -21,4 +21,19 @@ print(student_details["name"])
 print(student_details["City"])
 
 print(student_details.keys())
- 
+print(student_details.values())
+print(student_details.items()) #Combination both key and values
+
+# How do we add Element into the dictonary ...
+student_details ['country'] = "INDIA"
+print(student_details)
+
+# how do we updated the element into the dictonory 
+marks_details = {'Science' : 40 , 'Math' : 52  , 'English' :45 }
+student_details.update(marks_details)
+print(student_details)
+
+# HOw do we renove the element into the dictonory 
+student_details.pop("country")
+student_details.popitem()#removing the last eelemt into the dictonory 
+print(student_details)
