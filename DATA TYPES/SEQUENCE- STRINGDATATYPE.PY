@@ -38,3 +38,24 @@ College_Name = "GH Raisoni College of engeeneering and Management"
 print(College_Name[3:10])
 print(College_Name[3:]) #it goes to R to end --tk
 print(College_Name[:4]) #it goes to G to R 
+
+
+str = 'Datastructure'
+print(str[-12:-8])
+print(str[-9:9])
+
+# convert Lower Case into  Upper Case 
+str = "prathamdubey"
+print(str.upper())
+
+# convert Upper Case into  Lower Case 
+print(str.lower())
+print(str.capitalize())
+
+# Remving the Sapce with the help of Strip() method
+str2 = "  Shruti "
+print(str2.strip())
+
+# Replace Mthod() 
+str3 = ''' hello i am pratham , i am 23 years old , & i am also pursuing in MCA'''
+print (str3.replace('i am' ,"we are"))
