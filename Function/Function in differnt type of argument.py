@@ -70,3 +70,22 @@ def my_info(a, b, *args, **kwargs):
 my_info(5,6,7,8,9,0 , name = "pratham" , sername = "dubey" , age = 23 , city = "gondia")
 
 '''NOTE ->  kwargs it should be the last parameter '''
+
+'''Advanced Example '''
+
+def func(*args, **kwargs):
+    print("Positional:", args) 
+    print("Keyword:", kwargs)
+
+func(1, 2, 3, name="Alice", age=25)
+
+'''
+🔸Passing **kwargs to Another Function
+This is useful when you're wrapping or forwarding arguments: 
+example => '''
+
+def greet (name , age):
+     print(f"Hi {name}, you are {age} years old.")
+def wrapper(**kwargs):
+    greet(**kwargs)
+wrapper(name = "pratham", age = 23)
