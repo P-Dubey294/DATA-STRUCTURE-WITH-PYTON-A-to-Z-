@@ -29,3 +29,15 @@ def nNumberargs(*args):
         sum += num
     return sum
 print(nNumberargs(1,2,3,4,5))
+
+''' if i have to passed number of argument with defult argument '''
+''' There are tow rules 
+1> *args shuld bhi last parameter
+2> keyword = argumnets '''
+
+def funct23(*args, a, b):
+    print(a)
+    print(b)
+    print(args)
+    print(*args)
+funct23(3, 4, 5, 6, 7, a=1, b=2)
