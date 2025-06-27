@@ -41,3 +41,32 @@ def funct23(*args, a, b):
     print(args)
     print(*args)
 funct23(3, 4, 5, 6, 7, a=1, b=2)
+
+'''what is kwargs ?
+=> its stand for keywords argument 
+=> it is used in a defination for passing the varible number of keywords argument .
+=> its a standrd convention 
+=> It collects all extra keyword arguments into a dictionary. '''
+
+def my_display(**kwargs):
+    print(type(kwargs))
+    print(kwargs)
+    for key, value in kwargs.items():
+        print({key.capitalize()}, '->', value)
+
+my_display(name = "Pratham", city = "Gondia", age = 23, message = "Sucessfull!")
+
+
+#example kwargs :->
+def my_info(a, b, *args, **kwargs):
+    print(a)
+    print(b)
+    print(kwargs)
+    print(type(kwargs))
+    print(args)
+    for key , value in kwargs.items():
+        print(key.capitalize(),'->', value)
+
+my_info(5,6,7,8,9,0 , name = "pratham" , sername = "dubey" , age = 23 , city = "gondia")
+
+'''NOTE ->  kwargs it should be the last parameter '''
