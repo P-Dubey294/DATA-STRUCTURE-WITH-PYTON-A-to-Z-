@@ -89,3 +89,21 @@ def greet (name , age):
 def wrapper(**kwargs):
     greet(**kwargs)
 wrapper(name = "pratham", age = 23)
+
+'''Return Type And Nested Function '''
+
+# Return Type 
+
+def add_number ( a : int ,  b : int ) -> str :
+    return a + b ;
+print ( add_number (5.5 , 7.7))
+
+''' Nested Function '''
+
+def outer ():
+    print (" Hello from the outer ")
+def inner () :
+    print (" Hello from  the inner ")
+
+outer()
+inner()
