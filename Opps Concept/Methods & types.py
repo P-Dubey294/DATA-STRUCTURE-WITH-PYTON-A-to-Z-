@@ -14,7 +14,7 @@ my_car.start_engine()  # Calling the method on the object
 3> Static Method '''
 
 # Instance Method 
-'''class Person :
+class Person :
    def __init__(self, name , age ):
        self.name = name
        self.age = age
@@ -23,7 +23,7 @@ my_car.start_engine()  # Calling the method on the object
        return self.age # onject instance self is mendetory to write 
 
 per = Person("Prathamkumar dubey" , 23)
-print(per.findAge())'''
+print(per.findAge())
 
 '''2 > Class Method
 -> class / object both 
@@ -79,3 +79,12 @@ per.greet()
 
 Person.hello()
         
+''' SUMMARY TABLES '''
+'''
+| Method Type     | First Arg | Access Instance Data | Access Class Data |    Decorator       |
+| --------------- | --------- | -------------------- | ----------------- |   ---------------  |
+| Instance Method | `self`    | ✅ Yes                | ❌ No           |    None            |
+| Class Method    | `cls`     | ❌ No                 | ✅ Yes          |    `@classmethod`  |
+| Static Method   | None      | ❌ No                 | ❌ No           |    `@staticmethod` |
+
+'''
