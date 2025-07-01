@@ -33,12 +33,26 @@ dog.dog_Name()
 class Parent :
    property = 90
 
+   def eat(self):                    #same method 
+        print("paraent eating")
+
 class Child(Parent) :
    property = 99
 
    def display(self):
        print("child Properties", self.property)
-       print("Parent Property", super().property)
+       print("Parent Property", super().property) # acesss the parent properties with the hel of super keywords .
+
+   def eat(self):                   #same method
+        print("child eating")
+    
+   def callEat(self):
+    self.eat() # represent the child
+    super().eat() # reprent the parent
 
 obj = Child()
 obj.display()
+obj.callEat()
+
+'''What is method overide ?
+=> whe we called a same method in both parents and cild  with the same properties or behaviour .'''
