@@ -14,8 +14,8 @@ else:
 finally:
     # Code that always runs, error or not
     print("Cleanup code here.") '''
-#Example of Exception Handling ... 
 
+#Example of Exception Handling ... 
 try:
     num = int(input("Enter a number "));
     result = 10 / num ;
@@ -26,3 +26,35 @@ except ValueError :
     print ("  Enter a valid number");
 finally:
     print("Program Ended!")
+
+
+
+
+
+
+'''Try block using else '''
+num = int(input("Please Enter a number"))
+try:
+    result = 5 / num;
+except ZeroDivisionError:
+    print("zero cant be divisible please enter a valid number")
+else:
+    print("result is" , result)
+
+
+
+
+
+'''Asert keyword --> 
+using when riase the exception '''
+write = int(input("enter a number is"))
+def cube_Root(num):
+    assert num >= 0, "enter a positive number"
+    return num**(1/3)
+
+try:
+    print(cube_Root(8))
+    print(cube_Root(-8))
+except AssertionError as e:
+    print(e)
+print("Last Line")
