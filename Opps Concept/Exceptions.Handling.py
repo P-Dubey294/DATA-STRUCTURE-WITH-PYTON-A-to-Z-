@@ -58,3 +58,18 @@ try:
 except AssertionError as e:
     print(e)
 print("Last Line")
+
+
+# Coustome Exceptions 
+from ast import arguments
+class EmptyExceptions (RuntimeError):
+    def __init__(self,argument):
+        self.argument = argument
+        var = ""
+try:
+    raise EmptyExceptions("This varibles is empty Strings")
+except EmptyExceptions as e:
+    print(" Unexpected errors!", e)
+else:
+    print("this program will be end!")
+
