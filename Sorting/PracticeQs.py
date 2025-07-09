@@ -54,3 +54,32 @@ def sortTheString(str, x):
 str = "Akshay 43 Vishwa 79 Mohan 83 Nikhil 79 Shivani 43"   
 
 print(sortTheString(str, 50))
+
+# push zeros to end while maintaning the realtive order of the elements .
+
+''' lets understand the question 
+
+supoose we have a list or array like [ 1, 2, 0 , 4 ,3, 0, 5 ,0] so 
+all the zero are push tho the end of the non zero elelment and the non zero element 
+are as it same oderder like [ 1, 2 ,4, 3, 5, 0, 0, 0,]'''
+
+def PushTheZeroElemnt(arr):
+    count = 0  # count non zero elemment 
+    n = len(arr) # n = 8
+    temp = [0]*n  #temproroy list or array [0,0,0,0,0,0,0,0]
+
+    for i in range(n): # 0 to 8
+        if (arr[i] != 0): 
+            temp[count] = arr[i] # arr[i] ki value temp[count] me swap ho jayegi
+            count += 1   # count ek increased honga eg 1 then next me 2 then next 3 
+
+    # Fill remaining positions with 0 (already done by temp initialization)
+    for i in range(n):
+        arr[i] = temp[i]
+
+arr = [1,2,0,3,4,0,5,0]
+PushTheZeroElemnt(arr)
+print(arr)
+              
+        
+        
