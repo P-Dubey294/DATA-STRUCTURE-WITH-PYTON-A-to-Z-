@@ -1,4 +1,20 @@
 ''' find first and last possition of element in sorted array. '''
+#using linear Serching 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #using binary serching
 
