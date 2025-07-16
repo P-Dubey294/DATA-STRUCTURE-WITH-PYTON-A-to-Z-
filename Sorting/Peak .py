@@ -25,7 +25,7 @@ arr = [1,2,3,5]
 print(arr)
 print(Peak_Element(arr))
   
-#using Liner Serching 
+#using Liner Serching  leat code 282 question 
 
 def get_peak_element(arr):
     n = len(arr)
@@ -46,7 +46,7 @@ def get_peak_element(arr):
 
     return -1
 
-arr = [5, 2, 1]
+arr = [1,2,3,4,5,4,3,2,1]
 print(get_peak_element(arr))  # Output: 0 (since 5 is a peak)
 
     
