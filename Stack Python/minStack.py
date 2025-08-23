@@ -36,6 +36,7 @@ print("Top:", minstack.top())
 print("Min:", minstack.getMin())    
 minstack.pop()
 print("Min after pop", minstack.getMin())
+
 minstack.pop()
 print("Min after pop:", minstack.getMin())
 
