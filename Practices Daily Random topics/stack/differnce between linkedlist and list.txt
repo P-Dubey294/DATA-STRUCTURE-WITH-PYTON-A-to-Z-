@@ -1,0 +1,21 @@
+Stack implementation using list..
+
+list is datatype 
+
+// Advantage :- 1> directly Access to the element via index .
+                2> efficiently Access to the elemet via index 
+                3> simple implementation (directyl supported by any
+                proograming languages)
+
+// Disadvantages :- 1> fixed sized 
+                    2> if we have resized the list of the element 
+                    so ot has been costly 
+                    3> insertion and deletions (if we have insert or
+                    deleted the element at the end of list so time complexity is 
+                    0(1) but we insert or deleted at the middle of list so Time complexity 
+                    will be 0(n))
+
+Stack implementation using Linkedlist..
+
+
+
