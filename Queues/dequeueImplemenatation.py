@@ -1,0 +1,12 @@
+from collections import deque
+a = deque()
+a.append(10)
+a.append(20)
+a.append(30)
+print("inital  dequeue")
+print(a)
+print("element dequeue from the queue")
+print(a.popleft())
+print(a.popleft())
+print("queue after removing the element")
+print(a)
