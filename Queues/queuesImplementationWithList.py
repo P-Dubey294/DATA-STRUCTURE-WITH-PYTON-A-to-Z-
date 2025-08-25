@@ -1,0 +1,11 @@
+queues = []
+queues.append(10)
+queues.append(20)
+queues.append(30)
+queues.append(40)
+queues.append(50)
+print(queues)
+queues.pop(0)
+print(queues)
+queues.pop(1)
+print(queues)
